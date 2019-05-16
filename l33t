@@ -1,0 +1,17 @@
+#!/bin/bash
+
+EXERCISES_FOLDER=~/temp/l33t
+
+cd $EXERCISES_FOLDER
+mkdir -p test
+mkdir -p src
+
+echo "class Solution:
+
+    def $1(self):
+        return
+" >> src/$1.py
+
+touch test/$1.test
+
+# nvim -O test/$1.test src/$1.py

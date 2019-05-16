@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+cd "$(dirname "$0")"
+
+source ./bin/activate
+
+ROOT_DIR=$(pwd)
+
+export OLD_PYTHONPATH=PYTHONPATH
+export PYTHONPATH=$ROOT_DIR:$PYTHONPATH
